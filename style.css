@@ -44,6 +44,9 @@ li {
   display: flex;
 }
 
+.container {
+  padding: 50px 0;
+}
 .row {
   width:100%;
   max-width: 800px;
@@ -64,6 +67,13 @@ li {
   font-weight: bold;
 }
 
+section:nth-child(even) {
+  background-color:#adb6c1;
+}
+
+.section__title {
+  margin-bottom: 20px;
+}
 
 /* NAVIGATION BAR  */
 
@@ -170,4 +180,18 @@ justify-content: center;
 
 .about-me__image {
   width: 100%;
+}
+
+/* TECH STACK */
+
+.language__image {
+  width: 100%;
+  max-width: 100px;
+}
+
+.language__image--wrapper {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
