@@ -230,6 +230,15 @@ nav {
 
 /* PROJECTS */
 
+.project {
+  margin-bottom: 135px;
+}
+
+.project:last-child {
+  margin: 40px;
+}
+
+
 .project__image {
   width: 100%;
   transition: all 500ms ease;
@@ -274,10 +283,17 @@ nav {
   position: absolute;
   top: 50%;
   left: 90px;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
   background-color: transparent;
+  opacity: 0;
+  transition: transform 450ms, opacity 300ms ease;
+}
+
+.project:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
 }
 
 .project__description--title,
@@ -288,3 +304,36 @@ nav {
   color: white;
   background-color: transparent;
 }
+.project__description--link {
+  background-color: transparent;
+  text-decoration: none;
+  color:#080d1a;
+  font-size: 20px;
+  margin-right: 16px;
+  
+}
+
+.project__description--title {
+  font-size: 40px;
+}
+.project__description--para {
+  margin: 16px 0;
+}
+
+/* FOOTER  */
+
+footer {
+  background-color:#080d1a;
+}
+
+.footer__logo--image {
+  width: 70px;
+  height: 70px;
+}
+  
+
+.footer__row {
+padding: 8% 0;
+}
+
+
