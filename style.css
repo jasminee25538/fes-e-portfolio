@@ -152,7 +152,7 @@ nav {
 .about-me__picture {
   width: 100%;
   transform: scale(1.2);
-  /* padding: 8px; */
+  padding: 8px;
 }
 
 .about-me__info--para {
@@ -169,6 +169,7 @@ nav {
   font-size: 24px;
   padding: 0 16px;
   color: #080d1a;
+  
 }
 
 .about-me__image--container {
@@ -179,6 +180,7 @@ nav {
 
 .about-me__image {
   width: 100%;
+  margin-top: 28px;
 }
 
 /* TECH STACK */
