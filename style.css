@@ -11,8 +11,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
   background-color: #dce5f0;
 }
+
 
 h1,
 h2,
@@ -34,6 +41,32 @@ p {
   line-height: 1.5;
   font-size: 16px;
 }
+a {
+  text-decoration: underline;
+  position: relative;
+}
+.link__hover-effect:after {
+  content: "";
+  position:absolute;
+  height: 3px;
+  width: 0;
+  bottom: -3px;
+  left: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color:white;
+}
+.link__hover-effect--black:after {
+  background-color:black;
+}
+.link__hover-effect:hover:after {
+  width: 100%;
+  right: 
+
+}
+
 li {
   list-style: none;
 }
@@ -85,6 +118,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 12px;
 }
 
 .nav__link--list {
@@ -329,13 +363,60 @@ footer {
 }
 
 .footer__logo--image {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
   
 
 .footer__row {
 padding: 8% 0;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
+.footer__social--link {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+.footer__social--list {
+  margin: 20px 0;
+}
 
+ .footer__copyright {
+  color: white;
+ }
+.footer__logo--popper {
+  color: white;
+  position:absolute;
+  right: 0;
+  top: 30px;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+.footer__anchor {
+  position: relative;
+  margin: 20px;
+}
+.footer__anchor:hover .footer__logo--popper {
+  transform: translateX(60px);
+  opacity:1;
+}
+/* SMARTPHONES TABLETS */
+
+@media (max-width: 768px) {
+  nav {
+    height:68px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .about-me__info--para {
+    font-size:18px;
+  }
+
+
+}
