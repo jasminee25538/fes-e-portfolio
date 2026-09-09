@@ -43,7 +43,8 @@ a {
   text-decoration: underline;
   position: relative;
   transition: opacity 300ms ease;
-}i:hover {
+}
+svg:hover {
   opacity: 0.5;
 }
 .link__hover-effect:after {
@@ -151,6 +152,28 @@ nav {
   font-weight: bold;
 }
 
+.logo__initials {
+  font-size: 18px;
+  color: #080d1a;
+  margin: 0 12px;
+  font-family: 'Orbit', sans-serif;
+  font-weight:bold;
+  
+}
+.text__purple--initials {
+  font-family: 'Orbit', sans-serif;
+  color: #8b7cff;
+  font-weight: bold;
+}
+.cursor {
+  color: #5de4e8;
+  animation:blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    opacity:0;
+  }
+}
 /* ABOUT ME*/
 
 #about-me {
@@ -258,13 +281,13 @@ nav {
 }
 @keyframes animate-wave {
   0% {
-    transform: rotate (0);
+    transform: rotate(0);
   }
   50% {
-    transform: rotate (30deg);
+    transform: rotate(30deg);
   }
   100% {
-    transform: rotate (0);
+    transform: rotate(0);
   }
 }
 /* TECH STACK */
